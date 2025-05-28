@@ -1,0 +1,350 @@
+<!--I have never made a website before, so I used canva to design it and put text and images in there to give me
+A good Idea of what I wanted. After that I used the lessons form html to set up de basis. This made it easy to
+Copy paste everything since I already had a idea of what I wated and which text to use
+
+Canva link:https://www.canva.com/design/DAGmpvHN2yU/saGim2b2ABfCRjI5cB6iAQ/edit?utm_content=DAGmpvHN2yU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Sanne Ruiter</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!------------------------------------------------------------------------------------>
+    <!--Hero Block-->
+    <section class="hero">
+      <div class="hero-left">
+        <h1 id="typewriter"></h1>
+      </div>
+      <div class="hero-right">
+        <img src="images/Pf.jpg" alt="profile pic" />
+      </div>
+
+      <!--wave transition-->
+      <div class="wave-transition">
+        <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="rgba(213, 243, 205, 0.85)"
+            d="M0,100 C480,200 960,0 1440,100 L1440,150 L0,150 Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!---------------------------------------------------------------------------->
+    <!--navigation bar-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#inspiration">Inspiration</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#learned">knowledge</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+    <!-------------------------------------------------------------------------------------->
+    <!--The main wrapper is for the mega container that I made were are the sub containers are in-->
+    <div class="main-wrapper">
+      <!---------------------------------------------------------------------------->
+      <!--part 1: about me (get to know me)-->
+      <section id="about" class="about">
+        <div class="about-header">
+          <h2>Get to know me</h2>
+          <p>
+            Hi i am Sanne - I am a 21 year old Business/AI computer science
+            student
+          </p>
+          <p>
+            My dream is to become a business IT manager who understands both
+            code and people. I want to know enough about programming to support
+            my team, but more importantly: I want to understand the people I
+            work with — especially in multicultural environments.
+          </p>
+
+          <p>
+            I’m passionate about learning how culture shapes communication and
+            collaboration. Whether it's in a boardroom or a bento shop in Japan,
+            I believe understanding each other starts with curiosity and
+            respect.
+          </p>
+
+          <p>
+            When I am not at school or programming I love Hiking in the
+            mountains, which is a big inspiration for most of my idea’s.
+          </p>
+          <div class="skills">
+            <h3>Skills</h3>
+            <un>
+              <li>Python</li>
+              <li>Machine learning</li>
+              <li>Data science</li>
+              <li>Business IT management</li>
+              <li>Scrum master</li>
+            </un>
+          </div>
+        </div>
+      </section>
+      <!---------------------------------------------------------------------------->
+      <!---Image of friend group--->
+      <section class="image-fill">
+        <div class="image-group">
+          <img src="images/festival1.jpeg" alt="drum" />
+          <img src="images/Friends.JPG" alt="group of friends" />
+          <img src="images/festival2.jpeg" alt="mini-shrine" />
+        </div>
+        <div class="caption">
+          <strong>Shinjuku</strong>
+          <p>Festival Hanazono Shrine</p>
+        </div>
+      </section>
+      <!---------------------------------------------------------------------------->
+      <!--part 2: my inspiration in live (walking)-->
+      <section id="inspiration" class="inspiration">
+        <div class="inspiration-header">
+          <h2>My inspiration</h2>
+          <p>
+            Hiking is more than just a hobby to me – it’s how I clear my mind
+            and spark new ideas. Many of the concepts for this portfolio came to
+            me while hiking through Japan. I believe walking every day helps me
+            stay grounded and true to myself.
+          </p>
+        </div>
+
+        <div class="inspiration-flex">
+          <div class="quote-box">
+            <p>
+              "When I get stuck in code, I’d rather get stuck on a mountain
+              trail."
+            </p>
+          </div>
+
+          <div class="inspo-image">
+            <img src="images/hike.jpg" alt="mountain with hiking route" />
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------------------------------------------------->
+      <!--I part 3: current project-->
+      <section id="projects" class="projects">
+        <section class="project">
+          <div class="project-header">
+            <h2>Current project</h2>
+            <p>
+              <strong>Why:</strong><br />
+              For school, I had to create a project to learn more about the
+              culture of the university I’d be attending abroad. I decided to
+              include the first part of that project in this portfolio, since
+              I’ve never really done anything before that felt worth sharing.
+            </p>
+
+            <p>
+              I was so excited to learn how to build a website from scratch,
+              especially since it could boost my skills for Business IT
+              Management. Because I love challenging myself, I created this
+              entire website without using any templates—just pure HTML, CSS,
+              and JavaScript. By first designing my portfolio in Canva, I
+              learned step by step how to bring my ideas to life.
+            </p>
+          </div>
+
+          <div class="project-flex">
+            <!--make sure every thing is phone proof-->
+            <div class="project-box">
+              <p>
+                Through this project, I’m showing not only my interest in
+                frontend development, but also in culture, communication, and
+                storytelling. Every section of this site reflects something I
+                care about — from nature to respect for other cultures.
+              </p>
+            </div>
+            <div class="project-box">
+              <p>
+                As an ICT student and future business IT manager, this project
+                helps me grow both technically and personally. It brings me
+                closer to my goal of becoming someone who understands people
+                from different backgrounds and can support a diverse team with
+                empathy, knowledge, and curiosity.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--ADD PICTURE OF GROUP EXPIERIANCE YESTRDAY-->
+
+        <!---------------------------------------------------------------------------->
+        <!--part 4: what have I learned so far-->
+        <section id="learned" class="learned">
+          <div class="learned-header">
+            <h2>What I have learned so far</h2>
+            <p>
+              During my stay in Japan, I’ve already learned a lot about Japanese
+              culture. Although I don’t personally believe in any god, I was
+              inspired by Shintoism, one of the two main religions in Japan.
+              Shintoism and Buddhism have coexisted for over 1500 years and
+              continue to shape Japanese traditions and daily life. To give a
+              quick overview, I’ll highlight some of the key aspects of both
+              Shintoism and Buddhism.
+            </p>
+          </div>
+
+          <div class="learned-flex">
+            <!-- shintoism-->
+            <div class="learned-box">
+              <img src="images/tori.jpg" alt="tori gate in water" />
+              <h3>Shintoism</h3>
+              <p>
+                Indigenous religion in Japan that focuses on nature, spirits
+                (kami), and ancestor worship. It has no founder, sacred texts or
+                strict doctrines. Practices include purification, offerings and
+                festivals. Shrines (jinja) are Shinto places of worship,
+                emphasizing harmony with nature and life.
+              </p>
+              <div class="steps">
+                <p><strong>Steps to pray</strong></p>
+                <ol>
+                  <li>Bow once in front of tori gate</li>
+                  <li>Trow a coin in the offerings box (5 yen)</li>
+                  <li>Bow deeply "twice"</li>
+                  <li>Clap your hands "twice"</li>
+                  <li>Pray in silence</li>
+                  <li>Bow one more time (also when passing tori gate again)</li>
+                </ol>
+                <p>
+                  <strong>Tip:</strong> dont walk trough the middle of the tori
+                  gate since it is meant for the Kami(gods)
+                </p>
+              </div>
+            </div>
+            <!-- buddhism -->
+            <div class="learned-box">
+              <img src="images/Buddism.jpg" alt="Buddha statue" />
+              <h3>Buddhism</h3>
+              <p>
+                Foreign religion from India that focuses on enlightenment,
+                karma, and escaping the cycle of rebirth. It has scriptures,
+                rituals and many sects. Practices include meditation, chanting
+                and ancestor worship. Temples (tera) are Buddhist places of
+                worship, emphasizing reflection, impermanence, and inner peace.
+              </p>
+              <div class="steps">
+                <p><strong>Steps to pray</strong></p>
+                <ol>
+                  <li>Trow a coun in the offer box</li>
+                  <li>bow gently with your hands together (gasshō)</li>
+                  <li>close your eyes and pray in silence</li>
+                  <li>gently bow one more time</li>
+                </ol>
+
+                <p>
+                  <strong>Tip: </strong>Try to stay respectful when visiting
+                  tempels, people come there to pray for their religion. Dont
+                  see it as a tourist attraction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!---------------------------------------------------------------------------->
+        <!--part 6: how to behave-->
+        <div class="behave">
+          <div class="behave-header">
+            <h2>How to behave in Japan</h2>
+
+            <p>
+              As someone who always tries to respect other cultures, the first
+              few weeks in Japan were really challenging for me. I wasn’t used
+              to the Japanese way of living and was constantly afraid of
+              accidentally breaking social rules. But I learned that as long as
+              you’re respectful and make an effort to follow local customs,
+              you’ll be just fine. You don’t need to stress as much as I
+              did—just be open and willing to learn.
+            </p>
+          </div>
+          <div class="do-and-dont">
+            <!--unorderd list for the do's and don'ts in Japan-->
+            <div class="Do">
+              <h3>Do's</h3>
+              <ul>
+                <li>Take you shoes off</li>
+                <li>Try to sort trash</li>
+                <li>Try to speak Japanese</li>
+                <li>Respect local customs</li>
+                <li>Taste the local cuisine</li>
+                <li>
+                  You are allowed to pick up a noodles or small plates when
+                  eating
+                </li>
+              </ul>
+            </div>
+
+            <div class="dont">
+              <h3>Dont's</h3>
+              <ul>
+                <li>Destroy or touch tori gates</li>
+                <li>skip lines</li>
+                <li>Dont blow your nose in public</li>
+                <li>Trow your trash on the streat</li>
+                <li>dont stick your chopsticks in you rice</li>
+                <li>Dont bombard the geishas and maiko for pictures</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tip">
+            <h3>Tip:</h3>
+            <strong>" GO NI ITTEWA GO NI SHITAGAE"</strong>
+            <p>When in Rome, do as the Romans do</p>
+          </div>
+        </div>
+        <!---------------------------------------------------------------------------->
+        <!--part 7: pictures-->
+        <div class="pictures">
+          <div class="pictures-card">
+            <img src="images/creepy torigate.jpeg" t="Abandonend tori gate" />
+            <div class="caption">
+              <strong>Shizuoka</strong>
+              <p>Izu, Shizuoka - Yama Shrine</p>
+            </div>
+          </div>
+
+          <div class="pictures-card center-card">
+            <img src="images/naturehike.jpeg" alt="Nature trail hakone" />
+            <div class="caption">
+              <strong>Hakone</strong>
+              <p>Sukumogawa Nature Exploration Trail</p>
+            </div>
+          </div>
+
+          <div class="pictures-card">
+            <img src="images/Sunset.jpeg" alt="Sunzet" />
+            <div class="caption">
+              <strong>Omiya</strong>
+              <p>SIT Global dorm - Taken from my balkony</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!---------------------------------------------------------------------------->
+    <!--part 8: footer-->
+    <footer id="footer" class="footer">
+      <h2>Get in Touch!</h2>
+      <p><strong>Want to connect or ask something? Reach out below!</strong></p>
+      <p>- Email: z125082@shibaura-it.ac.jp</p>
+      <p>
+        <a href="https://www.linkedin.com/in/sanne-ruiter-1b5951227/"
+          >- LinkedIn: Sanne-Ruiter
+        </a>
+      </p>
+      <p>- Phone: +31-0638271521</p>
+      <p>- Hoevelaken, Nijkerk</p>
+      <div class="footer-image"></div>
+    </footer>
+    <script src="Java.js"></script>
+    <a href="#" class="back-to-top">↑</a>
+  </body>
+</html>

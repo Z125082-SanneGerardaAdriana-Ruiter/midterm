@@ -1,0 +1,698 @@
+/*hero section, fills the whole screen and centres the info.
+I asked chat gpt what a logical order was to make sure everyithing 
+that belonged to gether would be easy to find.
+
+How did I work:
+- I asked chatgpt how to build up css to make sure that there was some logic
+- Looked at w3School and youtube how to add certain code blocks
+- Built from scratch no bootstrap used.
+- When I was finished or if something did not work properly I asked chatgpt what
+  was wrong with the code. 
+- I made a word document with all the meanings of every thing I used
+
+-------------------------------------------------------------------------------
+hero block */
+.hero {
+  position: relative;
+  z-index: 1; /*position order 1 low is back 100 is front*/
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+
+  background-image: url("images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  justify-content: space-between;
+  overflow: hidden;
+  
+}
+
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  padding-right: 20px;
+  max-width: 50%;
+}
+
+
+#typewriter {
+  font-size: 4vw;
+  white-space: normal;
+  margin: 0;
+}
+
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*makes wave transitions look nice*/
+.wave-transition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transform: translateY(2px);
+}
+
+.wave-transition svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*---------------------------------------*/
+/* makes sure that it still looks good on mobile phones */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  
+  .hero-left {
+    align-items: center;
+    max-width: 100%;
+  }    
+
+
+  #typewriter {
+    font-size: 7vw;
+  }
+
+  
+  .hero-right img {
+    width: 60%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+}
+/* ---------------------------------------------------------- */
+/* backgroud*/
+
+body {
+  font-size: 16px;
+  background-image: url("images/back.jpg"); /* jouw achtergrond */
+  background-attachment: fixed; /*makes sure the img stays*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: sans-serif; /*make sure every font is the same style*/
+}
+/* ---------------------------------------------------------- */
+/* nav bar */
+.main-nav {
+  background-color: rgba(122, 144, 109, 0.9);
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #e2f5da;
+}
+
+/*--------------------------------------------------------------*/
+/* main-wrapper container, basicly the block*/
+
+.main-wrapper {
+  max-width: fill;
+  margin: 0 auto;
+  margin-top: 0;
+  background-color: rgba(213, 243, 205, 0.85); 
+  padding: 40px 20px;
+  padding-top: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ---------------------------------------------------------- */
+/* part 2: about part */
+.about {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-header {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-header h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-header h3 {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+
+.skills {
+text-align: left;
+}
+
+
+/* ---------------------------------------------------------- */
+/*image friend group*/
+.image-fill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.image-group {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.image-group img {
+  width: 220px;
+  height: 200;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  max-width: 220px;
+}
+/* ---------------------------------------------------------- */
+/* part 3: Inspiration */
+.inspiration {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inspiration-header {
+  background-color: rgba(122, 144, 109,0.9);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inspiration-header h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.inspiration-header p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.inspiration-flex {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 700px;
+}
+
+.quote-box,
+.inspo-image {
+  flex: 1;
+  max-width: 348px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 348px;
+}
+
+.inspo-image {
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.inspo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .inspiration-header {
+    text-align: center;
+  }
+
+  .inspiration-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-box,
+  .inspo-image img {
+    max-width: 100%;
+  }
+}
+/* ---------------------------------------------------------- */
+/* part 4: project */
+.project {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.project-header {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-header h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.project-header p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.project-flex {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.project-box {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 420px;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .project-header {
+    text-align: center;
+  }
+
+  .project-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-box {
+    max-width: 100%;
+  }
+}
+/* ---------------------------------------------------------- */
+/* part 5: What I have learned so far */
+.learned {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learned-header {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.learned-header h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.learned-header p{
+  margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.learned-flex {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.learned-box img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin: 0 auto 15px;
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.learned-box {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 420px;
+  flex: 1;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.learned-box h3 {
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+.learned-box p {
+  margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* mobiel */
+@media (max-width: 768px) {
+  .learned-header {
+    text-align: center;
+  }
+
+  .learned-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learned-box {
+    max-width: 100%;
+  }
+}
+/* ---------------------------------------------------------- */
+/* part 6: how to behave in Japan */
+.behave {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.behave-header {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.behave-header h2 {
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+
+.behave-header p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: left;
+}
+/* do's & donts*/
+.do-and-dont {
+  display: flex;
+  gap: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.Do,
+.dont {
+  flex: 1;
+  padding: 30px;
+}
+
+.Do {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+}
+
+.dont {
+  background-color: #ddeccc;
+  color: #3a4e2b;
+}
+
+.Do h3,
+.dont h3 {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.Do ul,
+.dont ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.Do li,
+.dont li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
+
+.tip {
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 20px 70px;
+  border-radius: 20px;
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .do-and-dont {
+    flex-direction: column;
+  }
+
+  .Do,
+  .dont {
+    padding: 20px;
+  }
+}
+
+/* ---------------------------------------------------------- */
+/* part 7: pictures */
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.pictures-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pictures-card img {
+  width: 220px;
+  height: 200;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+ background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 16px;
+  text-align: center;
+  width: 220px;
+}
+ 
+
+.caption strong {
+  display: block;
+  font-weight: bold;
+}
+
+.caption p {
+  margin: 4px 0 0;
+  font-size: 0.95em;
+}
+
+/* makes sure the middle one is a bit lower */
+.pictures-card.center-card {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .pictures {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pictures-center {
+    margin-top: 20px;
+  }
+}
+/*---------------------------------------------------------------------*/
+/*footer*/
+.footer {
+  background-color: rgba(122, 144, 109, 0.9); 
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+  font-family: sans-serif;
+  border-radius: 0 0 8px 8px;
+  max-width: 100%;
+}
+
+.footer h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none; 
+}
+
+.footer a:hover {
+  color: #ddd; 
+}
+
+/*-----------------------------------------------------------------------*/
+/*back up button*/
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgba(122, 144, 109, 0.9);
+  color: white;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: rgba(100, 120, 90, 0.9);
+}
